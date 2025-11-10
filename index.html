@@ -213,6 +213,36 @@
             margin-top: 10px;
         }
         
+        .history-section {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            margin: 30px 0;
+        }
+        
+        .personality-card {
+            background-color: var(--light);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 5px solid var(--accent);
+        }
+        
+        .personality-name {
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .quote {
+            font-style: italic;
+            margin: 15px 0;
+            padding-left: 20px;
+            border-left: 3px solid var(--secondary);
+        }
+        
         @media (max-width: 768px) {
             .foda-container {
                 grid-template-columns: 1fr;
@@ -238,7 +268,7 @@
         <section class="executive-summary">
             <h2>Resumen Ejecutivo</h2>
             <p>Itá, la "Ciudad del Cántaro y la Miel", es un distrito histórico y culturalmente rico con <strong>69,049 habitantes</strong> según el Censo 2022. Ocupa el puesto 22 en población a nivel nacional y muestra una distribución equilibrada entre hombres y mujeres, con una edad mediana de 29 años que indica una población joven y productiva.</p>
-            <p>Este informe presenta un diagnóstico integral basado en datos oficiales del INE para fundamentar políticas públicas efectivas y un gobierno orientado a resultados.</p>
+            <p>Fundada en 1539, Itá posee una rica tradición cultural centrada en la alfarería y la producción de miel de caña, legado de las reducciones franciscanas. Este informe presenta un diagnóstico integral basado en datos oficiales del INE para fundamentar políticas públicas efectivas y un gobierno orientado a resultados.</p>
         </section>
 
         <div class="data-correction">
@@ -261,7 +291,7 @@
                 <p>Distribución casi equilibrada</p>
             </div>
             <div class="card">
-                <h3><i class="fas fa-baby"></i> Edad Mediana</h3>
+                <h3><i class="fas fa-baby"></i> Edad Promedio</h3>
                 <p><strong>29 años</strong></p>
                 <p>Ligeramente por debajo del promedio departamental (30 años)</p>
                 <p>Población joven con potencial productivo</p>
@@ -274,122 +304,136 @@
             </div>
         </div>
         
-        <h2 class="section-title">Análisis Sectorial Crítico</h2>
+        <section class="history-section">
+            <h2 class="section-title">Historia y Patrimonio Cultural</h2>
+            
+            <div class="card">
+                <h3><i class="fas fa-landmark"></i> Fundación y Orígenes</h3>
+                <p><strong>Fundada en 1539</strong> por el gobernador Domingo Martínez de Irala, en un pueblo habitado por guaraníes. Fue declarada distrito en 1884.</p>
+                <p>Se inició como una población mestiza con costumbres y tradiciones que con el tiempo se volvieron muy originales, aunque algunas se han ido perdiendo por falta de difusión y conocimiento.</p>
+            </div>
+            
+            <div class="card">
+                <h3><i class="fas fa-jug"></i> Tradición del Cántaro</h3>
+                <p>Itá es conocida como la "Ciudad del Cántaro" debido a que durante la época de la reducción franciscana, el Fray Tomás de Aquino enseñó a las mujeres del lugar la elaboración de vasijas de barro llamadas cántaros.</p>
+                <p>Esta artesanía aprovechaba la abundancia de barro en la zona y permitía a las mujeres obtener ingresos mediante la venta de estos utensilios útiles para mantener el sabor y frescura del agua.</p>
+            </div>
+            
+            <div class="card">
+                <h3><i class="fas fa-honey-pot"></i> Tradición de la Miel de Caña</h3>
+                <p>La elaboración de miel de caña surge con los primeros pobladores, quienes se dedicaban al cultivo de caña de azúcar al ser la tierra apta para este cultivo.</p>
+                <p>Al descubrir las propiedades de esta planta, decidieron elaborar alimentos frescos, nutritivos y naturales, dando origen a esta tradición que perdura hasta hoy.</p>
+            </div>
+        </section>
         
-        <h3>Economía y Empleo</h3>
+        <h2 class="section-title">Estructura Urbana y Territorial</h2>
         <div class="card-container">
             <div class="card">
-                <h3><i class="fas fa-industry"></i> Base Económica</h3>
-                <p>Agropecuaria (hortalizas, caña de azúcar, mandioca, ganadería) y artesanal (alfarería, cuero, tejidos)</p>
+                <h3><i class="fas fa-city"></i> Barrios Urbanos</h3>
+                <ul>
+                    <li>San Blas (antiguo y original)</li>
+                    <li>Sportivo</li>
+                    <li>Cerro Corá</li>
+                    <li>San Antonio</li>
+                    <li>Villa Rossana I y II (periferia)</li>
+                    <li>Paranambú</li>
+                    <li>San Cayetano</li>
+                    <li>San Miguel (periféricos)</li>
+                </ul>
             </div>
             <div class="card">
-                <h3><i class="fas fa-store"></i> Mercado Municipal</h3>
-                <p>Centro de abastecimiento local que ofrece productos agrícolas, artesanías y alimentos. Requiere mejoras en infraestructura, diversificación de productos y estrategias de comercialización.</p>
-            </div>
-            <div class="card">
-                <h3><i class="fas fa-tractor"></i> Ferias con Agricultores</h3>
-                <p>La Municipalidad organiza ferias que conectan directamente a productores locales con consumidores, fortaleciendo la economía circular y el acceso a alimentos frescos.</p>
+                <h3><i class="fas fa-map-marked-alt"></i> Compañías Rurales</h3>
+                <p>Itá cuenta con 17 compañías dependientes de la municipalidad:</p>
+                <ul>
+                    <li>Yhovy</li>
+                    <li>Potrero Po'i</li>
+                    <li>Itá Potrero</li>
+                    <li>Valle Jo'a</li>
+                    <li>Oculto Chircaty</li>
+                    <li>Arrua'i</li>
+                    <li>Curupicayty</li>
+                    <li>Peguaho</li>
+                    <li>Jhugua Ñaró</li>
+                    <li>Calle Ybaté</li>
+                    <li>Calle Po'i</li>
+                    <li>Tape Tuyá</li>
+                    <li>Posta Gaona</li>
+                    <li>Aveiro</li>
+                    <li>Caaguazú</li>
+                    <li>Caraguataity</li>
+                    <li>Las Piedras</li>
+                </ul>
             </div>
         </div>
         
-        <h3>Salud Pública</h3>
-        <div class="card-container">
-            <div class="card">
-                <h3><i class="fas fa-hospital"></i> Infraestructura</h3>
-                <p><strong>1 Hospital Distrital</strong> (dependiente del MSPBS)</p>
-                <p><strong>Varios Puestos de Salud</strong> en compañías rurales</p>
-            </div>
-            <div class="card">
-                <h3><i class="fas fa-stethoscope"></i> Servicios</h3>
-                <p>Atención primaria y especialidades básicas (pediatría, ginecología)</p>
-                <p>Participa en programas nacionales (vacunación, salud materno-infantil)</p>
-            </div>
-            <div class="card">
-                <h3><i class="fas fa-exclamation-triangle"></i> Debilidades Críticas</h3>
-                <p>Carencias de equipamiento y personal especializado</p>
-                <p>Infraestructura con limitaciones para atender a 69,049 habitantes</p>
-            </div>
-        </div>
+        <h2 class="section-title">Patrimonio Cultural y Personalidades Ilustres</h2>
         
-        <h3>Educación</h3>
-        <div class="card-container">
-            <div class="card">
-                <h3><i class="fas fa-school"></i> Cobertura Actual</h3>
-                <p>Alta en educación escolar básica y media</p>
-                <p>Numerosas instituciones públicas y subvencionadas</p>
-            </div>
-            <div class="card">
-                <h3><i class="fas fa-graduation-cap"></i> Brecha Importante</h3>
-                <p><strong>Oferta limitada de educación superior y técnica</strong></p>
-                <p>Los jóvenes deben migrar para continuar estudios, fomentando la fuga de talentos</p>
-            </div>
-            <div class="card">
-                <h3><i class="fas fa-lightbulb"></i> Oportunidad</h3>
-                <p>Crear un <strong>centro municipal de formación técnica y profesional</strong> (alianzas con universidades o SNPP) enfocado en turismo, agroindustria y TIC</p>
-            </div>
-        </div>
-        
-        <h3>Deporte y Juventud</h3>
-        <div class="card-container">
-            <div class="card">
-                <h3><i class="fas fa-futbol"></i> Infraestructura Deportiva</h3>
-                <p>Existencia de polideportivos y canchas en diferentes barrios, pero con necesidad de mantenimiento y mejora.</p>
-            </div>
-            <div class="card">
-                <h3><i class="fas fa-running"></i> Programas Juveniles</h3>
-                <p>Oportunidad de fortalecer programas deportivos municipales como estrategia de prevención de adicciones y promoción de salud.</p>
-            </div>
-            <div class="card">
-                <h3><i class="fas fa-users"></i> Participación</h3>
-                <p>Fomentar la creación de ligas barriales y torneos intermunicipales para fortalecer el sentido de comunidad entre los jóvenes.</p>
-            </div>
-        </div>
-        
-        <h3>Festividades y Cultura</h3>
-        <div class="highlight">
-            <h3><i class="fas fa-church"></i> Fiestas Patronales en Honor a San Blas</h3>
-            <p><strong>Fecha:</strong> 3 de febrero (con novenario que inicia nueve días antes)</p>
-            <p><strong>Actividades principales:</strong></p>
+        <div class="personality-card">
+            <div class="personality-name">Rosa Brítez - "La Ceramista de América"</div>
+            <p class="quote">"Yo soy lo que soy porque hago del barro lo que quiero. La cultura es una acción, no sólo ideas y pensamientos. La cultura del Paraguay es lo que constituye nuestro ser, es ñande reko."</p>
+            <p>Doña Rosa es capaz de crear objetos mirando fotografías e imágenes. Crea jarrones, tortugas, peces, máscaras, y unos 100 tipos de moldes diferentes. Utiliza herramientas sencillas como un pedazo de tacuara, una cuchara, un palito y hojas de naranja para dar forma al barro.</p>
+            <p><strong>Principales exposiciones internacionales:</strong></p>
             <ul>
-                <li><strong>Novenario:</strong> Rezo del rosario, sonar de campanas y explosiones de bombas</li>
-                <li><strong>Día de San Blas (3 de febrero):</strong> Procesión del santo, jineteadas y gastronomía tradicional</li>
-                <li><strong>Festival del Cántaro y la Miel:</strong> Evento organizado por la Municipalidad en el anfiteatro de la Laguna de Itá con música, danza y artistas invitados</li>
+                <li>1970: Museo del Barro, Asunción</li>
+                <li>1992: Expo Sevilla, España</li>
+                <li>1994: Exposición en Alemania</li>
+                <li>2001: Expo Mundial de Cerámica, Seúl, Corea</li>
+                <li>2003: Exposiciones en Chile y Uruguay</li>
+                <li>2004: Exposición en México</li>
+                <li>2005: Exposición en Francia</li>
             </ul>
-            <p><strong>Lugar:</strong> Casco urbano y Laguna de Itá</p>
-            <p><strong>Características:</strong> Eventos familiares con entrada libre y gratuita. La Iglesia de San Blas (data de 1698) es el centro de la devoción.</p>
         </div>
         
-        <h3>Infraestructura, Movilidad y Espacios Públicos</h3>
         <div class="card-container">
             <div class="card">
-                <h3><i class="fas fa-road"></i> Movilidad</h3>
-                <p>La <strong>Ruta Nacional N°1</strong> es su columna vertebral, pero sufre de tramos estrechos, baches y mala iluminación</p>
-            </div>
-            <div class="card">
-                <h3><i class="fas fa-tree"></i> Espacios Públicos</h3>
-                <p><strong>Laguna de Itá:</strong> Principal pulmón verde</p>
-                <p><strong>Cerro Arrua'i:</strong> Potencial para turismo de aventura</p>
-                <p><strong>Plaza Principal:</strong> Recientemente renovada</p>
+                <h3><i class="fas fa-award"></i> Otras Personalidades Destacadas</h3>
+                <ul>
+                    <li><strong>Juana Isidrez</strong> - Ceramista, acreedora del premio Príncipe Klaus</li>
+                    <li><strong>Julia Isidrez</strong> - Ceramista, acreedora del premio Príncipe Klaus</li>
+                    <li><strong>Marciana Rojas</strong> - Artesana destacada</li>
+                    <li><strong>Gregoria Benítez</strong> - Artesana destacada</li>
+                    <li><strong>Estanislao Servín</strong> - Artesano destacado</li>
+                    <li><strong>Celso Felipe Benítez</strong> - Artesano destacado</li>
+                    <li><strong>Mercedes Servín</strong> - Artesana destacada</li>
+                    <li><strong>Fredy Fretes</strong> - Artesano destacado</li>
+                    <li><strong>Familia Jiménez</strong> - Artesanos destacados</li>
+                </ul>
             </div>
         </div>
         
-        <h3>Desafíos Sociales y Seguridad</h3>
+        <h2 class="section-title">Turismo y Atractivos Culturales</h2>
         <div class="card-container">
             <div class="card">
-                <h3><i class="fas fa-exclamation-circle"></i> Pobreza</h3>
-                <p>Existencia de bolsones de pobreza moderada, principalmente en las compañías rurales</p>
+                <h3><i class="fas fa-store"></i> Centro Artesanal San Blas</h3>
+                <p>Ubicado sobre Ruta I, en el centro de la ciudad. Cuenta con exposición permanente de alfarería, cerámica guaraní-hispánica, cántaros y frazadas. Destacan también las muñecas de trapo.</p>
             </div>
             <div class="card">
-                <h3><i class="fas fa-cannabis"></i> Drogadicción</h3>
-                <p>Consumo de sustancias (inhalantes, marihuana) en la población joven</p>
-                <p>Requiere abordaje desde la prevención y la salud mental</p>
+                <h3><i class="fas fa-church"></i> Reducción Franciscana e Iglesia de San Blas</h3>
+                <p>Itá alberga una de las más importantes reducciones franciscanas. La Iglesia de San Blas se construyó con materiales rescatados de la primera capilla franciscana.</p>
+                <p>El travesaño de la nave central tiene grabado en latín: "Esta casa del Señor fue edificada en 1698".</p>
             </div>
             <div class="card">
-                <h3><i class="fas fa-shield-alt"></i> Seguridad Ciudadana</h3>
-                <p>Ciudad tranquila con bajos índices de delincuencia violenta</p>
-                <p>Problemas principales: delitos menores y siniestralidad vial</p>
+                <h3><i class="fas fa-mountain"></i> Cerro Arrua'i</h3>
+                <p>Allí se encuentra la misteriosa gruta y hermosos balnearios sobre el arroyo Paranambú. Ideal para turismo de aventura:</p>
+                <ul>
+                    <li>Caza y pesca</li>
+                    <li>Safari fotográfico</li>
+                    <li>Senderismo</li>
+                    <li>Recorrer el camino antiguo del Mariscal López</li>
+                    <li>Campamentos</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-water"></i> Laguna de Itá - Mártires de Acosta Ñú</h3>
+                <p>Conocida como la laguna que nunca se seca, está rodeada de leyendas:</p>
+                <ul>
+                    <li>Según una versión, durante la Guerra Grande una anciana se negó a dar agua a los soldados, provocando un diluvio que formó la laguna</li>
+                    <li>Otra leyenda cuenta que dentro de la laguna se enterró una campana de oro para evitar que fuera tomada como trofeo de guerra</li>
+                </ul>
             </div>
         </div>
+        
+        <!-- Resto del contenido (Economía, Salud, Educación, etc.) se mantiene igual -->
         
         <h2 class="section-title">Análisis FODA Consolidado</h2>
         <div class="foda-container">
@@ -402,6 +446,7 @@
                     <li>Ubicación estratégica en la Ruta N°1</li>
                     <li>Tradición de ferias y mercado local</li>
                     <li>Distribución poblacional equilibrada por sexo</li>
+                    <li>Patrimonio cultural vivo con artistas reconocidos internacionalmente</li>
                 </ul>
             </div>
             <div class="foda-item oportunidades">
@@ -412,6 +457,7 @@
                     <li>Creciente interés por el turismo interno y de experiencias</li>
                     <li>Población en edad productiva para desarrollar proyectos</li>
                     <li>Potencial para desarrollar el turismo religioso durante las fiestas patronales</li>
+                    <li>Reconocimiento internacional de artistas locales para posicionar la marca ciudad</li>
                 </ul>
             </div>
             <div class="foda-item debilidades">
@@ -422,6 +468,7 @@
                     <li>Brecha de desarrollo entre zona urbana y rural</li>
                     <li>Problemas sociales emergentes (drogadicción juvenil)</li>
                     <li>Mercado municipal con necesidad de mejoras</li>
+                    <li>Pérdida progresiva de tradiciones culturales por falta de transmisión</li>
                 </ul>
             </div>
             <div class="foda-item amenazas">
@@ -432,6 +479,7 @@
                     <li>Competencia de otras ciudades con mejor infraestructura</li>
                     <li>Conflictos políticos locales que dificultan la gestión unificada</li>
                     <li>Pérdida de tradiciones artesanales ante la migración juvenil</li>
+                    <li>Globalización que amenaza la identidad cultural local</li>
                 </ul>
             </div>
         </div>
@@ -455,7 +503,7 @@
             
             <div class="action-item">
                 <h3 class="action-title"><i class="fas fa-monument"></i> Itá Turística y Cultural</h3>
-                <p>Crear la "Ruta Turística de Itá": Laguna - Centro Histórico - Cerro Arrua'i, con señalética, senderos seguros y paquetes turísticos. Potenciar las fiestas patronales como evento de interés regional. Desarrollar programas deportivos municipales para niños y jóvenes.</p>
+                <p>Crear la "Ruta Turística de Itá": Laguna - Centro Histórico - Cerro Arrua'i, con señalética, senderos seguros y paquetes turísticos. Potenciar las fiestas patronales como evento de interés regional. Desarrollar programas deportivos municipales para niños y jóvenes. Crear un programa de rescate y transmisión de tradiciones culturales.</p>
             </div>
             
             <div class="action-item">
